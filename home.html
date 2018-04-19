@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta name="format-detection" content="telephone=no">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link href="static/css/index.css" rel="stylesheet">
+    <link rel="icon" href="static/favicon.ico">
+  </head>
+  <body>
+    <!-- SVG-->
+    <div class="svg-container" style="position: absolute; width: 0; height: 0; overflow: hidden;">
+      <svg xmlns="http://www.w3.org/2000/svg">
+        <symbol id="icon-vintage-logo" viewBox="0 0 84.1 115.5">
+          <style>
+            .st0 {
+              fill: #000
+            }
+          </style>
+          <path d="M21.7 0H0l5.1 19.8h21.5z" />
+          <path d="M63.2 0L33.7 115.5h21L84.1 0z" />
+        </symbol>
+      </svg>
+    </div>
+    <!-- picture element HTML5 shiv-->
+    <script>
+      document.createElement('picture');
+    </script>
+    <!-- Header-->
+    <header class="header">
+      <div class="container">
+        <div class="header__menu">
+          <div class="header__menu__logo">
+            <a href="/">На сайт Calltouch</a>
+          </div>
+          <ul class="header__menu__nav">
+            <li>
+              <a class="anchor" href="#nominate">Номинации</a>
+            </li>
+            <li>
+              <a class="anchor" href="#rules">Условия</a>
+            </li>
+            <li>
+              <a class="anchor" href="#leading">Подать заявку</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- Main content-->
+    <main class="content" data-page="home">
+      <section class="main">
+        <div class="container">
+          <div class="main__show">
+            <div class="main__show__snowball">
+              <img class="main__show__snowball__front" src="./static/img/ball_front.png" alt="snowball">
+              <img class="main__show__snowball__back" src="./static/img/ball_back.png" alt="snowball">
+              <img class="main__show__snowball__logo" src="./static/img/ball_logo.png" alt="snowball">
+              <canvas class="main__show__snowball__middle" id="snow"></canvas>
+            </div>
+            <div class="main__show__info">
+              <div class="main__show__info__top">
+                <div class="main__show__info__img">
+                  <img src="./static/img/composition.svg" alt="logo-presenation">
+                </div>
+                <h1 class="main__show__info__h1">Calltouch Performance Awards</h1>
+                <p class="main__show__info__p">1 — 30 апреля 2018 года</p>
+                <a class="main__show__info__button anchor" href="#leading">Подать заявку</a>
+              </div>
+              <div class="main__show__info__bottom">
+                <h3 class="main__show__info__h3">Первый объективный рейтинг рекламных агентств</h3>
+                <p class="main__show__info__p2">Выявляем самые эффективные performance-агентства
+                  <br>по контекстной рекламе.</p>
+                <h3 class="main__show__info__h3 h3__main">Единственный критерий – цена уникального звонка</h3>
+              </div>
+              <div class="main__show__info__table">
+                <div class="main__show__info__table__price">
+                  <h4>Цена</h4>
+                  <p>уникального звонка</p>
+                </div>
+                <div class="main__show__info__table__equal">
+                  <span></span>
+                  <span></span>
+                </div>
+                <div class="main__show__info__table__sum">
+                  <div class="main__show__info__table__sum__item">
+                    <h4>Бюджет</h4>
+                    <p>на контекстную рекламу</p>
+                  </div>
+                  <div class="main__show__info__table__sum__item">
+                    <h4>Уникальные звонки</h4>
+                    <p>с контекстной рекламы</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="autoretail" id="nominate">
+        <div class="container">
+          <div class="heading">
+            <div class="heading__top">
+              <h2 class="heading__top__title">Авторитейл</h2>
+              <p class="heading__top__nomination">45 номинаций</p>
+            </div>
+            <p class="heading__subtitle autoretail__subtitle">Минимальный бюджет на период сбора статистики по обеим системам — 200 000 рублей с НДС.</p>
+          </div>
+          <div class="autoretail__info js-tilt">
+            <h4 class="autoretail__info__text">К участию в каждой номинации принимаются только моно&#8209;брендовые сайты по следующим маркам автомобилей:</h4>
+          </div>
+          <div class="autoretail__list">
+            <ul class="autoretail__list__item">
+              <li>Лада</li>
+              <li>УАЗ</li>
+              <li>Audi</li>
+              <li>Bentley</li>
+              <li>BMW</li>
+              <li>Cadillac</li>
+              <li>Changan</li>
+              <li>Chery</li>
+              <li>Chevrolet</li>
+            </ul>
+            <ul class="autoretail__list__item">
+              <li>Chevrolet Niva</li>
+              <li>Citroen</li>
+              <li>Datsun</li>
+              <li>Dongfeng</li>
+              <li>Ford</li>
+              <li>Geely</li>
+              <li>Genesis</li>
+              <li>GreatWall</li>
+              <li>Haval</li>
+            </ul>
+            <ul class="autoretail__list__item">
+              <li>Honda</li>
+              <li>Hyundai</li>
+              <li>Infiniti</li>
+              <li>Isuzu</li>
+              <li>Jaguar</li>
+              <li>Jeep</li>
+              <li>Kia</li>
+              <li>LandRover</li>
+              <li>Lexus</li>
+            </ul>
+            <ul class="autoretail__list__item">
+              <li>Lifan</li>
+              <li>Luxgen</li>
+              <li>Mazda</li>
+              <li>Mercedes-Benz</li>
+              <li>Mini</li>
+              <li>Mitsubishi</li>
+              <li>Nissan</li>
+              <li>Peugeot</li>
+              <li>Porsche</li>
+            </ul>
+            <ul class="autoretail__list__item">
+              <li>Ravon</li>
+              <li>Renault</li>
+              <li>Rolls-Royce</li>
+              <li>Skoda</li>
+              <li>Subaru</li>
+              <li>Suzuki</li>
+              <li>Toyota</li>
+              <li>Volkswagen</li>
+              <li>Volvo</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="medicine">
+        <div class="container">
+          <div class="heading">
+            <div class="heading__top">
+              <h2 class="heading__top__title">Медицина</h2>
+              <p class="heading__top__nomination">11 номинаций</p>
+            </div>
+            <p class="heading__subtitle">Минимальный бюджет указан с НДС и включает в себя обе системы контекстной рекламы.</p>
+          </div>
+          <div class="medicine__items">
+            <div class="item__info">
+              <div class="item__info__title">Небольшие клиники общего профиля</div>
+              <div class="item__info__text">Сайт клиники или небольшой сети (до 3 клиник в Москве и МО) с амбулаторными направлениями, диагностикой и хирургией (наличие всех трех необязательно).</div>
+              <div class="white__info js-tilt">
+                <div class="white__info__text medicine__white">
+                  <div class="white__info__text__icon medicine__white__icon">1</div>
+                  <div class="white__info__text__word">
+                    <h4>Небольшая клиника,
+                      <br>средний бюджет</h4>
+                    <p> Бюджет от 200 000 до 700 000 рублей.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="white__info js-tilt">
+                <div class="white__info__text medicine__white">
+                  <div class="white__info__text__icon medicine__white__icon">2</div>
+                  <div class="white__info__text__word">
+                    <h4>Небольшая клиника,
+                      <br>большой бюджет</h4>
+                    <p> Бюджет от 700 000 рублей.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item__info__title">Крупные сети клиник общего профиля</div>
+              <div class="item__info__text">Сайт сети клиник 4+ по Москве и МО с амбулаторными направлениями, диагностикой и хирургией (наличие всех трех необязательно).</div>
+              <div class="white__info js-tilt">
+                <div class="white__info__text medicine__white">
+                  <div class="white__info__text__icon medicine__white__icon">3</div>
+                  <div class="white__info__text__word">
+                    <h4>Крупная сеть,
+                      <br>средний бюджет</h4>
+                    <p>Бюджет от 300 000 до 1 000 000 рублей.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="white__info js-tilt">
+                <div class="white__info__text medicine__white">
+                  <div class="white__info__text__icon medicine__white__icon">4</div>
+                  <div class="white__info__text__word">
+                    <h4>Крупная сеть,
+                      <br>большой бюджет</h4>
+                    <p>Бюджет от 1 000 000 до 3 000 000 рублей.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="white__info js-tilt">
+                <div class="white__info__text medicine__white">
+                  <div class="white__info__text__icon medicine__white__icon">5</div>
+                  <div class="white__info__text__word">
+                    <h4>Крупная сеть,
+                      <br>очень большой бюджет</h4>
+                    <p>Бюджет от 3 000 000 рублей.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item__info">
+              <div class="medicine__views"></div>
+              <h4 class="item__info__title">Хирургия</h4>
+              <p class="item__info__text">Сайт с акцентом на стационарные направления (хирургия).</p>
+              <div class="white__info js-tilt">
+                <div class="white__info__text medicine__white">
+                  <div class="white__info__text__icon medicine__white__icon">6</div>
+                  <div class="white__info__text__word">
+                    <h4>Хирургия,
+                      <br>средний бюджет</h4>
+                    <p>Бюджет от 200 000 до 500 000 рублей.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="white__info js-tilt">
+                <div class="white__info__text medicine__white">
+                  <div class="white__info__text__icon medicine__white__icon">7</div>
+                  <div class="white__info__text__word">
+                    <h4>Хирургия,
+                      <br>большой бюджет</h4>
+                    <p>Бюджет от 500 000 рублей.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item__info__title">Косметология</div>
+              <div class="item__info__text">Сайт с услугами эстетической косметологии и пластической хирургии.</div>
+              <div class="white__info js-tilt">
+                <div class="white__info__text medicine__white">
+                  <div class="white__info__text__icon medicine__white__icon">8</div>
+                  <div class="white__info__text__word">
+                    <h4>Косметология,
+                      <br>средний бюджет</h4>
+                    <p>Бюджет от 150 000 до 300 000 рублей.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="white__info js-tilt">
+                <div class="white__info__text medicine__white">
+                  <div class="white__info__text__icon medicine__white__icon">9</div>
+                  <div class="white__info__text__word">
+                    <h4>Косметология,
+                      <br>большой бюджет</h4>
+                    <p>Бюджет от 300 000 рублей.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item__info__title">Стоматология</div>
+              <div class="item__info__text">Сайт стоматологической клиники.</div>
+              <div class="white__info js-tilt">
+                <div class="white__info__text medicine__white">
+                  <div class="white__info__text__icon medicine__white__icon">10</div>
+                  <div class="white__info__text__word">
+                    <h4>Стоматология,
+                      <br>средний бюджет</h4>
+                    <p>Бюджет от 150 000 до 300 000 рублей.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="white__info js-tilt">
+                <div class="white__info__text medicine__white">
+                  <div class="white__info__text__icon medicine__white__icon">11</div>
+                  <div class="white__info__text__word">
+                    <h4>Стоматология,
+                      <br>большой бюджет</h4>
+                    <p>Бюджет от 300 000 рублей.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="estate">
+        <div class="container">
+          <div class="heading">
+            <div class="heading__top">
+              <h2 class="heading__top__title">Недвижимость</h2>
+              <p class="heading__top__nomination">18 номинаций</p>
+            </div>
+            <p class="heading__subtitle">Минимальный бюджет указан с НДС и включает в себя обе системы контекстной рекламы.
+              <br>Во всех номинациях, кроме коммерческой недвижимости, речь идет о продаже.</p>
+          </div>
+          <div class="estate__items">
+            <div class="item__info">
+              <div class="item__info__title">Загородная недвижимость</div>
+              <div class="item__info__text">Сайт продажи загородных домов, таунхаусов и участков с подрядом. Стоимость объекта до 20 млн. рублей.</div>
+              <div class="white__info js-tilt">
+                <div class="white__info__text estate__white">
+                  <div class="white__info__text__icon estate__white__icon">1</div>
+                  <div class="white__info__text__word">
+                    <h4>Загородная недвижимость,
+                      <br>эконом, средний бюджет</h4>
+                    <p>Бюджет от 300 000 до 600 000 рублей.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="white__info js-tilt">
+                <div class="white__info__text estate__white">
+                  <div class="white__info__text__icon estate__white__icon">2</div>
+                  <div class="white__info__text__word">
+                    <h4>Загородная недвижимость,
+                      <br>эконом, большой бюджет</h4>
+                    <p>Бюджет от 600 000 рублей.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item__info__text estate__text">Стоимость объекта от 20 млн. рублей.</div>
+              <div class="white__info js-tilt">
+                <div class="white__info__text estate__white">
+                  <div class="white__info__text__icon estate__white__icon">3</div>
+                  <div class="white__info__text__word">
+                    <h4>Загородная недвижимость,
+                      <br>бизнес, средний бюджет</h4>
+                    <p>Бюджет от 300 000 до 600 000 рублей.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="white__info js-tilt">
+                <div class="white__info__text estate__white">
+                  <div class="white__info__text__icon estate__white__icon">4</div>
+                  <div class="white__info__text__word">
+                    <h4>Загородная недвижимость,
+                      <br>бизнес, большой бюджет</h4>
+                    <p>Бюджет от 600 000 рублей.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item__info__title">Коммерческая недвижимость</div>
+              <div class="item__info__text">Сайт по продаже офисных помещений.</div>
+              <div class="white__info js-tilt">
+                <div class="white__info__text estate__white">
+                  <div class="white__info__text__icon estate__white__icon">5</div>
+                  <div class="white__info__text__word">
+                    <h4>Продажа офисов,
+                      <br>средний бюджет</h4>
+                    <p>Бюджет от 300 000 до 600 000 рублей.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="white__info js-tilt">
+                <div class="white__info__text estate__white">
+                  <div class="white__info__text__icon estate__white__icon">6</div>
+                  <div class="white__info__text__word">
+                    <h4>Продажа офисов,
+                      <br>большой бюджет</h4>
+                    <p>Бюджет от 600 000 рублей.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item__info__text estate__text">Сайт по аренде офисных помещений.</div>
+              <div class="white__info js-tilt">
+                <div class="white__info__text estate__white">
+                  <div class="white__info__text__icon estate__white__icon">7</div>
+                  <div class="white__info__text__word">
+                    <h4>Аренда офисов,
+                      <br>средний бюджет</h4>
+                    <p>Бюджет от 300 000 до 600 000 рублей.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="white__info js-tilt">
+                <div class="white__info__text estate__white">
+                  <div class="white__info__text__icon estate__white__icon">8</div>
+                  <div class="white__info__text__word">
+                    <h4>Аренда офисов,
+                      <br>большой бюджет</h4>
+                    <p>Бюджет от 600 000 рублей.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item__info__text estate__text">Сайт по аренде и продаже офисных помещений.</div>
+              <div class="white__info js-tilt">
+                <div class="white__info__text estate__white">
+                  <div class="white__info__text__icon estate__white__icon">9</div>
+                  <div class="white__info__text__word">
+                    <h4>Аренда и продажа офисов,
+                      <br>средний бюджет</h4>
+                    <p>Бюджет от 300 000 до 600 000 рублей.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="white__info js-tilt">
+                <div class="white__info__text estate__white">
+                  <div class="white__info__text__icon estate__white__icon">10</div>
+                  <div class="white__info__text__word">
+                    <h4>Аренда и продажа офисов,
+                      <br>большой бюджет</h4>
+                    <p>Бюджет от 600 000 рублей.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item__info">
+              <div class="item__info__title">Новостройки</div>
+              <div class="item__info__text">Сайт, продающий квартиры стоимостью
+                <br>до 100 000 рублей за м².</div>
+              <div class="white__info js-tilt">
+                <div class="white__info__text estate__white">
+                  <div class="white__info__text__icon estate__white__icon">11</div>
+                  <div class="white__info__text__word">
+                    <h4>Эконом-класс,
+                      <br>средний бюджет</h4>
+                    <p>Бюджет от 300 000 до 700 000 рублей.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="white__info js-tilt">
+                <div class="white__info__text estate__white">
+                  <div class="white__info__text__icon estate__white__icon">12</div>
+                  <div class="white__info__text__word">
+                    <h4>Эконом-класс,
+                      <br>большой бюджет</h4>
+                    <p>Бюджет от 700 000 рублей.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item__info__text estate__text">Стоимость квартиры от 100 000 до 200 000 рублей за м².</div>
+              <div class="white__info js-tilt">
+                <div class="white__info__text estate__white">
+                  <div class="white__info__text__icon estate__white__icon">13</div>
+                  <div class="white__info__text__word">
+                    <h4>Комфорт,
+                      <br>средний бюджет</h4>
+                    <p>Бюджет от 300 000 до 700 000 рублей.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="white__info js-tilt">
+                <div class="white__info__text estate__white">
+                  <div class="white__info__text__icon estate__white__icon">14</div>
+                  <div class="white__info__text__word">
+                    <h4>Комфорт,
+                      <br>большой бюджет</h4>
+                    <p>Бюджет от 600 000 рублей.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item__info__text estate__text">Стоимость квартиры от 200 000 до 400 000 рублей за м².</div>
+              <div class="white__info js-tilt">
+                <div class="white__info__text estate__white">
+                  <div class="white__info__text__icon estate__white__icon">15</div>
+                  <div class="white__info__text__word">
+                    <h4>Бизнес,
+                      <br>средний бюджет</h4>
+                    <p>Бюджет от 300 000 до 700 000 рублей.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="white__info js-tilt">
+                <div class="white__info__text estate__white">
+                  <div class="white__info__text__icon estate__white__icon">16</div>
+                  <div class="white__info__text__word">
+                    <h4>Бизнес,
+                      <br>большой бюджет</h4>
+                    <p>Бюджет от 700 000 рублей.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item__info__text estate__text">Стоимость квартиры от 400 000 рублей за м².</div>
+              <div class="white__info js-tilt">
+                <div class="white__info__text estate__white">
+                  <div class="white__info__text__icon estate__white__icon">17</div>
+                  <div class="white__info__text__word">
+                    <h4>Элитное жилье,
+                      <br>средний бюджет</h4>
+                    <p>Бюджет от 300 000 до 700 000 рублей.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="white__info js-tilt">
+                <div class="white__info__text estate__white">
+                  <div class="white__info__text__icon estate__white__icon">18</div>
+                  <div class="white__info__text__word">
+                    <h4>Элитное жилье,
+                      <br>большой бюджет</h4>
+                    <p>Бюджет от 700 000 рублей.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="reasons">
+        <div class="container">
+          <h2 class="reasons__title">Примите участие в Calltouch
+            <br>Performance Awards и вы сможете:</h2>
+          <div class="reasons__items">
+            <div class="reasons__items__item">
+              <img src="./static/img/chess_icon.svg" alt="chess_icon">
+            </div>
+            <div class="reasons__items__item">
+              <img src="./static/img/shop_icon.svg" alt="shop_icon">
+            </div>
+            <div class="reasons__items__item">
+              <img src="./static/img/ad_automation_icon.svg" alt="automation_icon">
+            </div>
+            <div class="reasons__items__item">
+              <img src="./static/img/targeting_icon.svg" alt="targeting_icon">
+            </div>
+            <div class="reasons__items__item">
+              <img src="./static/img/agreement_icon.svg" alt="agreement_icon">
+            </div>
+            <div class="reasons__items__item">
+              <img src="./static/img/return_icon.svg" alt="return_icon">
+            </div>
+            <div class="reasons__items__item">
+              <img src="./static/img/paid_content_icon.svg" alt="paid_content_icon">
+            </div>
+          </div>
+          <div class="reasons__arguments">
+            <div class="reasons__arguments__arg">
+              <div class="reasons__arguments__arg__title">Победить и доказать,</div>
+              <div class="reasons__arguments__arg__text">что вы – реальный лидер рынка контекстной рекламы, убедить клиентов и партнеров в своем профессионализме и найти новых.</div>
+            </div>
+            <div class="reasons__arguments__arg">
+              <div class="reasons__arguments__arg__title">Проверить свои силы,</div>
+              <div class="reasons__arguments__arg__text">узнать свои слабые места, улучшить показатели своего агентства и повысить командный дух сотрудников.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="terms" id="rules">
+        <div class="container">
+          <h2 class="terms__title">Условия участия в рейтинге</h2>
+          <div class="terms__info">
+            <div class="terms__info__list">
+              <ol>
+                <li>Сроки сбора статистики для участия в рейтинге по аккаунтам агентств – с 1 по 30 апреля.</li>
+                <li>Регион показа рекламы клиентских аккаунтов – Москва и МО.</li>
+                <li>На клиентском сайте должен работать динамический коллтрекинг от компании Calltouch.</li>
+                <li>Для участия в рейтинге необходимо вести контекстную рекламу в обеих контекстных системах (Яндекс.Директ и Google Adwords).</li>
+                <li>Должна быть проведена корректная интеграция аккаунтов Яндекс.Директ и Google Adwords с личным кабинетом Calltouch. В результатах рейтинга учитываются только те данные, которые были переданы в личный кабинет автоматически.</li>
+              </ol>
+            </div>
+            <div class="terms__info__list second">
+              <ol>
+                <li>На проектах, участвующих в рейтинге, уникальный звонок должен иметь глубину определения «неограниченное количество дней». Это позволит всем участникам быть в равных условиях.</li>
+                <li>Обязательным условием участия является подключение Антифрода. Эта услуга будет для вас бесплатной на период теста.</li>
+              </ol>
+              <ul>
+                <li>По результатам месячного сбора статистики мы получим по каждому агентству стоимость уникального лида с контекстной рекламы по всем номинациям. Перед подведением итогов мы согласуем со всеми агентствами полученные результаты.</li>
+                <li>Рейтинг будет строиться исключительно по стоимости уникального звонка с контекстной рекламы.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="form" id="leading">
+        <div class="container">
+          <div class="form__img">
+            <img src="./static/img/snowball-form.png" alt="snowball">
+          </div>
+          <h2 class="form__title">Зарегистрируйтесь на Calltouch Performance Awards и станьте победителем первого объективного конкурса среди агентств контекстной рекламы.</h2>
+          <p class="form__text">Заполните форму и на ваш электронный адрес придет письмо с анкетой-заявкой на участие.
+            <br>Желаем удачи.</p>
+          <div class="form__content">
+            <div class="form__main">
+              <form class="form__content__form">
+                <div class="form-group">
+                  <label class="form__content__form__label">
+                    <span>Агенство</span>
+                    <input type="text">
+                  </label>
+                  <label class="form__content__form__label">
+                    <span>Имя</span>
+                    <input type="text">
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="form__content__form__label">
+                    <span>Электронная почта</span>
+                    <input type="text">
+                  </label>
+                  <div class="form__content__form__label error">
+                    <span>Телефон</span>
+                    <input type="text">
+                  </div>
+                  <p class="iferror">Проверьте номер телефона, похоже, что по нему мы не сможем вам позвонить.</p>
+                </div>
+                <button class="form__content__form__button">Отправить</button>
+              </form>
+              <div class="form__content__personaldata">
+                <p>Нажимая на кнопку "Отправить", вы даёте своё согласие
+                  <a href="#">на обработку персональных данных</a>
+                </p>
+                <p>А также соглашаетесь с правилами рейтинга.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="rules">
+        <div class="container">
+          <h2 class="rules__title">Правила рейтинга</h2>
+          <div class="rules__info">
+            <div class="rules__info__counter">1</div>
+            <div class="rules__info__text">В каждой номинации должно быть достаточное количество участников.
+              <br>Если нужное количество участников не набралось, номинация исключается из рейтинга.</div>
+          </div>
+          <div class="rules__info">
+            <div class="rules__info__counter">2</div>
+            <div class="rules__info__text">Если в ходе сбора статистики ваш бюджет превысит заявленный, мы переведем вас в другую номинацию.
+              <br>Если бюджет не достигнет минимального порога, нам придется исключить вас из номинации.</div>
+          </div>
+          <div class="rules__info">
+            <div class="rules__info__counter">3</div>
+            <div class="rules__info__text">Для рейтинга учитываются только уникальные прямые звонки (без обратных звонков и заявок с сайта).
+              <br>Так как не у всех участников подключен обратный звонок от Calltouch. Если у всех участников в номинации будет установлен обратный звонок от Calltouch, то уникальные обратные звонки тоже будут учтены.</div>
+          </div>
+          <div class="rules__info">
+            <div class="rules__info__counter">4</div>
+            <div class="rules__info__text">Мы не будем публиковать абсолютные цифры по цене уникального звонка, эта информация защищена NDA.
+              <br>Опубликованы будут только имена победителей.</div>
+          </div>
+          <div class="rules__info">
+            <div class="rules__info__counter">5</div>
+            <div class="rules__info__text">Мы не будем публиковать полные результаты по каждой номинации. То есть, никто не узнает, кто занял последнюю или предпоследнюю строчку. Только первые три места.</div>
+          </div>
+          <div class="rules__info">
+            <div class="rules__info__counter">6</div>
+            <div class="rules__info__text">По запросу каждого агентства мы предоставим информацию о его месте в рейтинге по каждой номинации, если эта информация будет вам интересна. Никто, кроме вас, ее не получит.</div>
+          </div>
+          <div class="rules__info">
+            <div class="rules__info__counter">7</div>
+            <div class="rules__info__text">Не забывайте следить за погрешностью в своем аккаунте. Высокий процент погрешности приводит к тому, что не все ваши звонки имеют связь с сессией. И, как следствие, ваши показатели будут занижены.</div>
+          </div>
+          <div class="rules__info">
+            <div class="rules__info__counter">8</div>
+            <div class="rules__info__text">Для подключенного аккаунта Google Adwords должна быть включена автопометка Google gclid.
+              <br>Без нее звонки не будут связаны с данными из аккаунта. Эта связь должна работать на протяжении всего конкурса.
+              <br>В рейтинг попадают только звонки, автоматически связанные с данными аккаунта.</div>
+          </div>
+          <div class="rules__info">
+            <div class="rules__info__counter">9</div>
+            <div class="rules__info__text">Для подключенного аккаунта Яндекс.Директ должна быть включена наша разметка calltouch_tm.
+              <br>Можно добавить ее нашим авторазметчиком или добавить в аккаунты самостоятельно.
+              <br>Корректность разметки можно проверять в личном кабинете, на странице настроек интеграции с Яндекс.Директ.
+              <br>Без нее звонки не будут связаны с данными из аккаунта.
+              <br>В рейтинг попадают только звонки, автоматически связанные с данными аккаунта.</div>
+          </div>
+          <div class="rules__info">
+            <div class="rules__info__counter">10</div>
+            <div class="rules__info__text">Для учета звонков с систем контекстной рекламы можно подключить к статистике статические номера для:
+              <ul class="ul">
+                <li>Звонков на визитки Яндекс.Директ</li>
+                <li>Звонков на расширение «Номер телефона» Google Adwords</li>
+                <li>Звонков на кампании только с номером телефона в Google Adwords</li>
+              </ul>
+              <p>Если, в процессе сбора статистики для рейтинга, вы подключаете дополнительные статические номера на эти источники, вам нужно заранее сообщить нам об этом. Звонки на статические номера, о которых вы не заявили заранее, не будут учтены в рейтинге.</p>
+            </div>
+          </div>
+          <div class="rules__info">
+            <div class="rules__info__counter">11</div>
+            <div class="rules__info__text">Запрещается использовать статические номера, участвующие в рейтинге на других рекламных источниках(кроме систем контекстной рекламы). В частности, запрещена публикация этих номеров в Яндекс.Справочнике или аккаунтах Google Business. Если эти
+              статические номера будут показываться на картах и справочниках, все звонки по этому номеру будут исключены из подсчета звонков для рейтинга.
+              <br>Пожалуйста, избегайте манипуляций с этими статическими номерами.</div>
+          </div>
+          <div class="rules__info">
+            <div class="rules__info__counter">12</div>
+            <div class="rules__info__text">Мы будем пристально следить за попытками накрутки звонков. Помимо Антифрода, мы будем проверять статистику на аномальные всплески звонков на отдельные статические или динамические номера, следить за нормальным распределением звонков по кампаниям
+              и ключевым словам.</div>
+          </div>
+          <div class="rules__info">
+            <div class="rules__info__counter">13</div>
+            <div class="rules__info__text">За попытки манипуляции со статистикой агентство будет исключено из рейтинга по всем номинациям. К таким попыткам относятся:
+              <ul class="ul">
+                <li>Накрутка звонков на номера динамического и статического пула</li>
+                <li>Использование номеров динамического и статического пула в других источниках</li>
+                <li>Манипуляции со статистикой рекламных аккаунтов.
+                  <br>Например, подключение к сайту не всех рекламных аккаунтов, которые ведут трафик на этот сайт и генерят звонки</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer-->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <a class="footer__top__logo" href="/"></a>
+          <div class="footer__top__contacts">
+            <a href="tel:+7 495 308 01 00">+7 495 308 01 00</a>
+            <a href="tel:8 800 222 13 81">8 800 222 13 81</a>
+            <p>Россия, 123557, г.Москва, Пресненский вал 27с9</p>
+          </div>
+          <div class="footer__top__social">
+            <p>Присоединяйтесь к нам в социальных сетях</p>
+            <ul class="footer__top__social__icons">
+              <li>
+                <a class="footer__top__social__icons__fb" href="#"></a>
+              </li>
+              <li>
+                <a class="footer__top__social__icons__vk" href="#"></a>
+              </li>
+              <li>
+                <a class="footer__top__social__icons__ok" href="#"></a>
+              </li>
+              <li>
+                <a class="footer__top__social__icons__youtube" href="#"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="fotter__bottom">
+          <div class="footer__bottom__menu">
+            <div class="footer__bottom__menu__item">
+              <h3>О сервисе</h3>
+              <ul class="footer__bottom__menu__item__list">
+                <li>
+                  <a href="#">Возможности</a>
+                </li>
+                <li>
+                  <a href="#">Применение</a>
+                </li>
+                <li>
+                  <a href="#">Цены</a>
+                </li>
+                <li>
+                  <a href="#">Партнерам</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__bottom__menu__item">
+              <h3>Мероприятия</h3>
+              <ul class="footer__bottom__menu__item__list">
+                <li>
+                  <a href="#">Вебинары</a>
+                </li>
+                <li>
+                  <a href="#">Конференции</a>
+                </li>
+                <li>
+                  <a href="#">События</a>
+                </li>
+                <li>
+                  <a class="active" href="#">Callday</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__bottom__menu__item">
+              <h3>База знаний</h3>
+              <ul class="footer__bottom__menu__item__list">
+                <li>
+                  <a href="#">Интеграции</a>
+                </li>
+                <li>
+                  <a href="#">Настройка системы</a>
+                </li>
+                <li>
+                  <a href="#">Отчеты</a>
+                </li>
+                <li>
+                  <a href="#">Справочный центр</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__bottom__menu__item">
+              <h3>О компании</h3>
+              <ul class="footer__bottom__menu__item__list">
+                <li>
+                  <a href="#">Пресса о нас</a>
+                </li>
+                <li>
+                  <a href="#">Вакансии</a>
+                </li>
+                <li>
+                  <a href="#">Контакты</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__bottom__menu__cabinet">
+              <p>Попробуйте собственными руками</p>
+              <a href="#">Демо-кабинет</a>
+            </div>
+          </div>
+          <div class="footer__bottom__terms">
+            <ul class="footer__bottom__terms__item">
+              <li>
+                <a href="#">Лицензионный договор</a>
+              </li>
+              <li>
+                <a href="#">Договор связи</a>
+              </li>
+            </ul>
+            <ul class="footer__bottom__terms__item">
+              <li>
+                <a href="#">Политика в отношении обработки персональных данных</a>
+              </li>
+              <li>
+                <a href="#">Согласие на обработку персональных данных</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Scripts-->
+    <script src="static/js/index.js"></script>
+  </body>
+</html>
